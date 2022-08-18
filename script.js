@@ -1,4 +1,5 @@
 function heightToPixel(x, canvas) {
+    x = -x;
     var h = canvas.height;
     x += 2;
     return x * h / 4;
@@ -11,7 +12,7 @@ function widthToPixel(x, canvas) {
 }
 
 function pixelToHeight(x, h) {
-    return (x - (h/2)) / (h/4);
+    return (-1) * (x - (h/2)) / (h/4);
 }
 
 function pixelToWidth(x, w) {
